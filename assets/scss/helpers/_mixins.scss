@@ -17,6 +17,11 @@
 /// @param {*} $property Property
 /// @param {*} $value Value
 
+
+@mixin colors-banner {
+  background-image: linear-gradient(rgb(243, 129, 129), rgb(252, 227, 138));
+}
+
 @mixin css3-prefix($property, $value) {
   -webkit-#{$property}: #{$value};
   -khtml-#{$property} : #{$value};

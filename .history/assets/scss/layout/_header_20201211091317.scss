@@ -1,19 +1,18 @@
 .header-scroll {
 
-  position: fixed;
-  z-index: 2;
+    position: fixed;
+    z-index: 2;
+    .img-logo {
+        color: #ffffff;
+        font-weight: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 
-  .img-logo {
-    color: #ffffff;
-    font-weight: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-  }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
 
 
   position: fixed;
@@ -30,7 +29,6 @@
       font-size: 30px;
       font-weight: bold;
       color: #ffffff;
-
       &:hover {
         color: #fce38a;
       }
@@ -42,21 +40,20 @@
         justify-content: space-between;
         height: 92px;
         width: 480px;
-
         a {
           font-size: 14px;
           font-weight: 400;
           text-transform: uppercase;
-
           &:hover {
             color: #fce38a;
           }
         }
       }
     }
-
     .shopping {
       height: 42px;
+      
     }
   }
 }
+>>>>>>> fccfe497aba8fdd8646d41901225482a4e771b34
