@@ -1,23 +1,37 @@
 a {
+ ;
   &:hover {
-    text-decoration: none;
-    color: white;
+    color: #fce38a;
   }
-  color: white;
 }
 
+<<<<<<< HEAD
 ul, ol, p, li, a {
   list-style: none;
+=======
+ul,
+ol,
+p,
+a,
+li {
+  list-style: none;
+  text-decoration: none;
+>>>>>>> fccfe497aba8fdd8646d41901225482a4e771b34
   padding: 0;
   margin: 0;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0;
 }
 
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 img {
@@ -31,7 +45,7 @@ div {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   position: relative;
 }
 
@@ -67,7 +81,12 @@ body {
   }
 }
 
-
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
 
 .btn {
   display: inline-block;
@@ -84,12 +103,119 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .line {
   color: #ffffff;
   width: 60px;
   height: 3px;
+}
+
+$transition: all 0.5s ease;
+.search {
+  width: 50px;
+  height: 50px;
+  margin-right: 30px;
+  // margin: 40px auto 0;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  transition: $transition;
+  &:before {
+    content: "";
+    display: block;
+    position: relative;
+    transition: $transition;
+  }
+  &.open {
+    width: 220px;
+    &:before {
+      height: 1px;
+      width: 220px;
+      bottom: 0;
+      position: absolute;
+      background-color: #fff;
+      transition: $transition;
+    }
+  }
+}
+
+.search-box {
+  width: 100%;
+  height: 100%;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+  color: #fff;
+  // padding: 20px 100px 20px 45px;
+  font-size: 20px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.search-button {
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 40px;
+  border: 2px solid #fff;
+  display: block;
+  position: relative;
+  // margin-left: 5px;
+  transition: $transition;
+  &:before {
+    content: "";
+    width: 2px;
+    height: 8px;
+    position: absolute;
+    right: -1.5px;
+    top: 10px;
+    display: block;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    transition: $transition;
+  }
+  &:after {
+    content: "";
+    width: 2px;
+    height: 7.5px;
+    position: absolute;
+    right: -3px;
+    top: 11.5px;
+    display: block;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    transition: $transition;
+  }
+  .open & {
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 60px;
+    &:before {
+      transform: rotate(52deg);
+      right: 11px;
+      top: 11.5px;
+      height: 10px;
+    }
+    &:after {
+      transform: rotate(-230deg);
+      right: 11px;
+      top: 6px;
+      height: 10px;
+    }
+  }
 }

@@ -1,0 +1,51 @@
+.banner {
+  position: relative;
+  z-index: 5;
+//   background-image: url("../images/header-banner.png");
+//   background-size: cover;
+//   background-repeat: no-repeat;
+  height: 1000px;
+  width: 100%;
+  
+  .banner__container {
+    margin: auto;
+    position: absolute;
+    z-index: 12;
+    top: 232px;
+    color: #ffffff;
+    text-align: center;
+    width: fit-content;
+
+    h1 {
+      font-family: "Kaushan Script", cursive;
+      font-size: 72px;
+      font-weight: 400;
+      margin-bottom: 60px;
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 150px;
+      font-weight: bold;
+      width: 800px;
+      margin-bottom: 70px;
+      line-height: 0.933;
+      text-align: center;
+    }
+
+    .line {
+      margin-bottom: 50px;
+    }
+
+    .btn-banner {
+      border: 3px solid #ffffff;
+      width: 164px;
+      height: 44px;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: transparent;
+    }
+  }
+}
