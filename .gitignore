@@ -7,4 +7,5 @@
 *.code-workspace
 
 .idea
+.history
 .DS_STORE
