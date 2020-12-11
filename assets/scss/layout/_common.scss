@@ -98,7 +98,6 @@ body {
 }
 
 $transition: all 0.5s ease;
-
 .search {
   width: 50px;
   height: 50px;
@@ -108,17 +107,14 @@ $transition: all 0.5s ease;
   position: relative;
   overflow: hidden;
   transition: $transition;
-
   &:before {
     content: "";
     display: block;
     position: relative;
     transition: $transition;
   }
-
   &.open {
     width: 220px;
-
     &:before {
       height: 1px;
       width: 220px;
@@ -139,7 +135,6 @@ $transition: all 0.5s ease;
   color: #fff;
   // padding: 20px 100px 20px 45px;
   font-size: 20px;
-
   &:focus {
     outline: none;
   }
@@ -165,7 +160,6 @@ $transition: all 0.5s ease;
   position: relative;
   // margin-left: 5px;
   transition: $transition;
-
   &:before {
     content: "";
     width: 2px;
@@ -178,7 +172,6 @@ $transition: all 0.5s ease;
     transform: rotate(-45deg);
     transition: $transition;
   }
-
   &:after {
     content: "";
     width: 2px;
@@ -191,20 +184,17 @@ $transition: all 0.5s ease;
     transform: rotate(-45deg);
     transition: $transition;
   }
-
   .open & {
     margin: 0;
     width: 30px;
     height: 30px;
     border-radius: 60px;
-
     &:before {
       transform: rotate(52deg);
       right: 11px;
       top: 11.5px;
       height: 10px;
     }
-
     &:after {
       transform: rotate(-230deg);
       right: 11px;
