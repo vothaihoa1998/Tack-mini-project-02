@@ -21,3 +21,12 @@ $('.search-button').click(function(){
         infinite: true
     });
 });
+
+$(window).on('scroll', function() {
+    if ($(this).scrollTop() >= $('.header-scroll').height()) {
+      $('.header-scroll').addClass('header--scrolled');
+    } else {
+      $('.header-scroll').removeClass('header--scrolled');
+    }
+});
+

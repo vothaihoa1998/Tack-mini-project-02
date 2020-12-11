@@ -7526,15 +7526,14 @@ body {
 }
 
 .line {
-  color: #ffffff;
+  background-color: #fff;
   width: 60px;
   height: 3px;
 }
 
 .search {
   width: 50px;
-  height: 50px;
-  margin-right: 30px;
+  height: 42px;
   background-color: transparent;
   position: relative;
   overflow: hidden;
@@ -7549,7 +7548,7 @@ body {
 }
 
 .search.open {
-  width: 220px;
+  width: 200px;
 }
 
 .search.open:before {
@@ -7576,13 +7575,10 @@ body {
 }
 
 .search-button {
-  width: 50px;
-  height: 50px;
   display: block;
   position: absolute;
   right: 0;
-  top: 0;
-  padding: 15px;
+  top: 0px;
   cursor: pointer;
 }
 
@@ -7590,10 +7586,15 @@ body {
   width: 15px;
   height: 15px;
   border-radius: 40px;
+  margin: 12px;
   border: 2px solid #fff;
   display: block;
   position: relative;
   transition: all 0.5s ease;
+}
+
+.search-icon:hover {
+  border: 2px solid #fce38a;
 }
 
 .search-icon:before {
@@ -7601,8 +7602,8 @@ body {
   width: 2px;
   height: 8px;
   position: absolute;
-  right: -1.5px;
-  top: 10px;
+  right: -2px;
+  top: 13px;
   display: block;
   background-color: #fff;
   transform: rotate(-45deg);
@@ -7612,10 +7613,9 @@ body {
 .search-icon:after {
   content: "";
   width: 2px;
-  height: 7.5px;
   position: absolute;
-  right: -3px;
-  top: 11.5px;
+  right: -5px;
+  top: 16px;
   display: block;
   background-color: #fff;
   transform: rotate(-45deg);
@@ -7645,14 +7645,22 @@ body {
 
 .header-scroll {
   position: fixed;
-  z-index: 15;
-  height: 92px;
   width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+.header-scroll.header--scrolled {
+  transition: all 0.5s;
+  background-color: rgba(34, 34, 34, 0.9);
 }
 
 .header-scroll .header-scroll__container {
   align-items: center;
-  justify-content: space-between;
+  height: 80px;
 }
 
 .header-scroll .header-scroll__container .img-logo {
@@ -7665,53 +7673,75 @@ body {
   color: #fce38a;
 }
 
-.header-scroll .header-scroll__container nav .container__wrap {
-  align-items: center;
-  justify-content: space-between;
-  height: 92px;
-  width: 480px;
+.header-scroll .header-scroll__container .container__wrap {
+  margin-left: auto;
 }
 
-.header-scroll .header-scroll__container nav .container__wrap a {
+.header-scroll .header-scroll__container .container__wrap .wrap__item {
+  display: inline-block;
+  margin-right: 55px;
+}
+
+.header-scroll .header-scroll__container .container__wrap .wrap__item a {
   font-size: 14px;
   font-weight: 400;
+  height: 80px;
+  padding: 12px 0;
   text-transform: uppercase;
 }
 
-.header-scroll .header-scroll__container nav .container__wrap a:hover {
+.header-scroll .header-scroll__container .container__wrap .wrap__item a:hover {
   color: #fce38a;
+  border-bottom: 3px solid #fce38a;
 }
 
 .header-scroll .header-scroll__container .shopping {
-  height: 42px;
+  margin-right: 21px;
+}
+
+.scrolled {
+  background-image: linear-gradient(#fce38a, #f38181);
+}
+
+main {
+  height: 100vh;
 }
 
 .banner {
+  top: 0;
   position: relative;
   z-index: 5;
+  background-image: url("../images/header-banner.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 1000px;
   width: 100%;
 }
 
 .banner .banner__container {
-  margin: auto;
+  width: 100%;
   position: absolute;
-  z-index: 12;
-  top: 232px;
+  top: 212.474px;
+  z-index: 15;
+}
+
+.banner .banner__container .container_wrap {
+  margin: auto;
   color: #ffffff;
   text-align: center;
   width: fit-content;
 }
 
-.banner .banner__container h1 {
-  font-family: "Kaushan Script", cursive;
+.banner .banner__container .container_wrap h1 {
+  font-family: 'Kaushan Script', cursive;
   font-size: 72px;
   font-weight: 400;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   line-height: 1.2;
 }
 
-.banner .banner__container h2 {
+.banner .banner__container .container_wrap h2 {
   font-size: 150px;
   font-weight: bold;
   width: 800px;
@@ -7720,11 +7750,11 @@ body {
   text-align: center;
 }
 
-.banner .banner__container .line {
-  margin-bottom: 50px;
+.banner .banner__container .container_wrap .line {
+  margin: 0 auto 50px auto;
 }
 
-.banner .banner__container .btn-banner {
+.banner .banner__container .container_wrap .btn-banner {
   border: 3px solid #ffffff;
   width: 164px;
   height: 44px;
@@ -7733,5 +7763,48 @@ body {
   font-weight: bold;
   color: #ffffff;
   background-color: transparent;
+}
+
+.banner .banner__line {
+  width: 100%;
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+}
+
+.banner .banner__line .line__wrap {
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner .banner__line .line__wrap .wrap__item {
+  border-top: 3px solid #ffffff;
+  width: 280px;
+  height: 73px;
+  opacity: 0.502;
+  padding-top: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.banner .banner__line .line__wrap .wrap__item span h3 {
+  display: inline-block;
+}
+
+.banner .banner__line .line__wrap .wrap__item span p {
+  display: inline-block;
+}
+
+.banner .banner__line .line__wrap .wrap__item--decorate {
+  opacity: 1;
+  position: relative;
+}
+
+.banner .banner__line .line__wrap .line {
+  position: absolute;
+  top: -3px;
+  width: 70px;
+  background-color: #f38181;
 }
 /*# sourceMappingURL=main.css.map */
