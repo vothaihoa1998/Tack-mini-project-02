@@ -4,12 +4,11 @@
   height: 92px;
   width: 100%;
 
-  .scroll__container {
-    margin: auto;
+  .header-scroll__container {
     align-items: center;
     justify-content: space-between;
 
-    a {
+    .img-logo {
       font-size: 30px;
       font-weight: bold;
       color: #ffffff;
