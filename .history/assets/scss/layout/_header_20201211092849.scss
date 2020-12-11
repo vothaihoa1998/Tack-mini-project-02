@@ -1,17 +1,34 @@
 .header-scroll {
   position: fixed;
+  z-index: 2;
+
+  .img-logo {
+    color: #ffffff;
+    font-weight: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  position: fixed;
   z-index: 15;
   height: 92px;
   width: 100%;
 
-  .header-scroll__container {
+  .scroll__container {
+    margin: auto;
     align-items: center;
     justify-content: space-between;
 
-    .img-logo {
-      color: #ffffff;
-      font-weight: 30px;
+    a {
+      font-size: 30px;
       font-weight: bold;
+      color: #ffffff;
 
       &:hover {
         color: #fce38a;
@@ -20,7 +37,8 @@
 
     nav {
       .container__wrap {
-        display: inline;
+        align-items: center;
+        justify-content: space-between;
         height: 92px;
         width: 480px;
 
@@ -28,7 +46,6 @@
           font-size: 14px;
           font-weight: 400;
           text-transform: uppercase;
-          padding-right: 30px;
 
           &:hover {
             color: #fce38a;
@@ -40,6 +57,5 @@
     .shopping {
       height: 42px;
     }
-
   }
 }

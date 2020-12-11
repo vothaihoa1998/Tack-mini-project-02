@@ -7802,59 +7802,44 @@ a .search-icon:after {
 
 .header-scroll {
   position: fixed;
-  z-index: 2;
-  position: fixed;
   z-index: 15;
   height: 92px;
   width: 100%;
 }
 
-.header-scroll .img-logo {
+.header-scroll .header-scroll__container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-scroll .header-scroll__container .img-logo {
   color: #ffffff;
   font-weight: 30px;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
-.header-scroll nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.header-scroll .scroll__container {
-  margin: auto;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header-scroll .scroll__container a {
-  font-size: 30px;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.header-scroll .scroll__container a:hover {
+.header-scroll .header-scroll__container .img-logo:hover {
   color: #fce38a;
 }
 
-.header-scroll .scroll__container nav .container__wrap {
-  align-items: center;
-  justify-content: space-between;
+.header-scroll .header-scroll__container nav .container__wrap {
+  display: inline;
   height: 92px;
   width: 480px;
 }
 
-.header-scroll .scroll__container nav .container__wrap a {
+.header-scroll .header-scroll__container nav .container__wrap a {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
+  padding-right: 30px;
 }
 
-.header-scroll .scroll__container nav .container__wrap a:hover {
+.header-scroll .header-scroll__container nav .container__wrap a:hover {
   color: #fce38a;
 }
 
-.header-scroll .scroll__container .shopping {
+.header-scroll .header-scroll__container .shopping {
   height: 42px;
 }
 

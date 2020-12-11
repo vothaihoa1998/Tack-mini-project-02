@@ -20,7 +20,6 @@
 
     nav {
       .container__wrap {
-        display: inline;
         height: 92px;
         width: 480px;
 
@@ -28,7 +27,6 @@
           font-size: 14px;
           font-weight: 400;
           text-transform: uppercase;
-          padding-right: 30px;
 
           &:hover {
             color: #fce38a;
