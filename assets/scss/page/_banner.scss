@@ -27,6 +27,15 @@
         font-weight: 400;
         margin-bottom: 30px;
         line-height: 1.2;
+
+        @media #{$info-phone} {
+          font-size: 42px;
+        }
+
+        @media only screen and (max-width: 500px) {
+          font-size: 32px;
+        }
+        
       }
 
       h2 {
@@ -36,6 +45,20 @@
         margin-bottom: 70px;
         line-height: 0.933;
         text-align: center;
+
+        @media screen and (max-width: 800px) {
+          width: auto;
+        }
+
+        @media #{$info-phone} {
+          font-size: 85px;
+          width: 400px;
+        }
+
+        @media only screen and (max-width: 500px) {
+          font-size: 55px;
+          width: auto
+        }
       }
 
       .line {
@@ -64,6 +87,10 @@
       margin: auto;
       align-items: center;
       justify-content: space-between;
+
+      @media #{$info-phone-4} {
+        justify-content: center;
+      }
       
       .wrap__item {
         border-top: 3px solid #ffffff;
@@ -73,6 +100,13 @@
         padding-top: 26px;
         text-transform: uppercase;
         color: #ffffff;
+
+        @media #{$info-tablet-vertical} {
+          width: 180px;
+        }
+        @media only screen and (max-width: 500px) {
+          width: 140px;
+        }
         span {
           h3 {
             display: inline-block;

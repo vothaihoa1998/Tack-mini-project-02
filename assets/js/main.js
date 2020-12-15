@@ -30,3 +30,10 @@ $(window).on('scroll', function() {
     }
 });
 
+
+
+
+$('.container__menu').click(function(){
+   $(".container__wrap").toggleClass("mobile-nav");
+   $(this).toggleClass("is-active");
+});
