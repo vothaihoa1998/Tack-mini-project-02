@@ -102,19 +102,6 @@
               text-transform: none;
               font-weight: 700;
   
-              &::before {
-                display: block;
-                position: absolute;
-                top: 65%;
-                left: 0;
-                width: 0;
-                height: 4px;
-                background: #FFFFFF;
-                letter-spacing: 2px;
-                content: '';
-                transition: all 400ms ease;
-            }
-  
             &:hover::before {
               width: 100%;
             }
