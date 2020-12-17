@@ -13,6 +13,16 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
+h2 {
+  font-family: 'Kaushan Script', cursive;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
 * {
   margin: 0;
 }
@@ -27,7 +37,7 @@ div {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   position: relative;
 }
 .flex-container {
@@ -202,5 +212,15 @@ $transition: all 0.5s ease;
       top: 6px;
       height: 10px;
     }
+  }
+}
+
+.fa {
+  // color: #95e1d3;
+  color: rgb(149, 225, 211);
+
+  &:hover {
+    transition: all 200ms;
+    color: #209680;
   }
 }
