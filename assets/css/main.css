@@ -7807,6 +7807,7 @@ body {
 @media only screen and (max-width: 991px) {
   .header-scroll .header-scroll__container .container__menu {
     display: block;
+    margin-right: 20px;
   }
 }
 
@@ -7945,7 +7946,7 @@ main {
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 320px) {
+@media screen and (max-width: 300px) {
   .banner .banner__line .line__wrap {
     justify-content: center;
   }
@@ -7969,7 +7970,13 @@ main {
 
 @media only screen and (max-width: 500px) {
   .banner .banner__line .line__wrap .wrap__item {
-    width: 140px;
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .banner .banner__line .line__wrap .wrap__item {
+    width: 200px;
   }
 }
 

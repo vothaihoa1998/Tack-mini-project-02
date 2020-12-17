@@ -88,7 +88,7 @@
       align-items: center;
       justify-content: space-between;
 
-      @media #{$info-phone-4} {
+      @media screen and (max-width: 300px) {
         justify-content: center;
       }
       
@@ -104,9 +104,15 @@
         @media #{$info-tablet-vertical} {
           width: 180px;
         }
+
         @media only screen and (max-width: 500px) {
-          width: 140px;
+          width: 130px;
         }
+
+        @media screen and (max-width: 300px) {
+          width: 200px;
+        }
+
         span {
           h3 {
             display: inline-block;
