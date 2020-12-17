@@ -7507,13 +7507,13 @@ body {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 991px) {
   .container {
     max-width: 960px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
   .container {
     max-width: 1200px;
   }
@@ -7867,7 +7867,7 @@ main {
   background-color: #f8f8f8;
   width: 100%;
   padding-top: 74px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .footer .footer__wrap {
@@ -7876,11 +7876,26 @@ main {
 
 .footer .footer__wrap .wrap__container {
   justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 20px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1250px) {
   .footer .footer__wrap .wrap__container {
-    justify-content: space-evenly;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .footer .footer__wrap .wrap__container {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer .footer__wrap .wrap__container {
+    justify-content: flex-start;
+    margin: 0 10px;
   }
 }
 
@@ -7888,9 +7903,16 @@ main {
   width: 466px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 991px) {
   .footer .footer__wrap .wrap__container .container__content {
-    width: 350px;
+    width: 310px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer .footer__wrap .wrap__container .container__content {
+    width: 466px;
+    margin-bottom: 30px;
   }
 }
 
@@ -7898,8 +7920,8 @@ main {
   font-size: 46px;
   color: #cccccc;
   font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  transform: translateY(-10px);
 }
 
 .footer .footer__wrap .wrap__container .container__content p {
@@ -7908,6 +7930,13 @@ main {
   line-height: 1.6;
   text-align: left;
   margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 991px) {
+  .footer .footer__wrap .wrap__container .container__content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
 }
 
 .footer .footer__wrap .wrap__container .container__content .content__item {
@@ -7931,7 +7960,13 @@ main {
 .footer .footer__wrap .wrap__container .container__content .content__social {
   border-top: 1px solid #e5e5e5;
   padding-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 991px) {
+  .footer .footer__wrap .wrap__container .container__content .content__social {
+    margin-bottom: 30px;
+  }
 }
 
 .footer .footer__wrap .wrap__container .container__content .content__social p {
@@ -7975,6 +8010,18 @@ main {
   font-style: italic;
 }
 
+@media only screen and (max-width: 991px) {
+  .footer .footer__wrap .wrap__container .container__content form input[type=email] {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer .footer__wrap .wrap__container .container__content form input[type=email] {
+    width: 140px;
+  }
+}
+
 .footer .footer__wrap .wrap__container .container__content form input[type=submit] {
   width: 150px;
   height: 40px;
@@ -7996,6 +8043,28 @@ main {
   background-color: #5e9a8f;
 }
 
+@media only screen and (max-width: 991px) {
+  .footer .footer__wrap .wrap__container .container__content form input[type=submit] {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer .footer__wrap .wrap__container .container__content form input[type=submit] {
+    width: 90px;
+  }
+}
+
+.footer .footer__wrap .wrap__container .container__blog {
+  margin-left: -45px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer .footer__wrap .wrap__container .container__blog {
+    margin-left: 0;
+  }
+}
+
 .footer .footer__wrap .wrap__container .container__blog .blogs {
   color: #333333;
   text-transform: uppercase;
@@ -8012,6 +8081,12 @@ main {
   margin-right: 20px;
 }
 
+@media only screen and (max-width: 400px) {
+  .footer .footer__wrap .wrap__container .container__blog .blog__img img {
+    margin-right: 10px;
+  }
+}
+
 .footer .footer__wrap .wrap__container .container__blog .blog__img .img__decorate {
   display: inline-block;
   transform: translateY(-10px);
@@ -8025,6 +8100,14 @@ main {
   white-space: pre-line;
 }
 
+@media only screen and (max-width: 400px) {
+  .footer .footer__wrap .wrap__container .container__blog .blog__img .img__decorate h3 {
+    white-space: normal;
+    width: 130px;
+    font-size: 10px;
+  }
+}
+
 .footer .footer__wrap .wrap__container .container__blog .blog__img .img__decorate p {
   font-size: 13px;
   color: #999999;
@@ -8033,7 +8116,15 @@ main {
 }
 
 .footer .footer__wrap .wrap__container .container__insta {
-  width: 270px;
+  width: 273px;
+}
+
+@media only screen and (max-width: 1250px) {
+  .footer .footer__wrap .wrap__container .container__insta {
+    width: auto;
+    margin-top: 20px;
+    margin-right: -5px;
+  }
 }
 
 .footer .footer__wrap .wrap__container .container__insta h3 {
@@ -8044,8 +8135,34 @@ main {
   margin-bottom: 38px;
 }
 
+@media only screen and (max-width: 991px) {
+  .footer .footer__wrap .wrap__container .container__insta h3 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer .footer__wrap .wrap__container .container__insta h3 {
+    text-align: start;
+  }
+}
+
 .footer .footer__wrap .wrap__container .container__insta .insta__images {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+  .footer .footer__wrap .wrap__container .container__insta .insta__images {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer .footer__wrap .wrap__container .container__insta .insta__images {
+    justify-content: flex-start;
+  }
 }
 
 .footer .footer__wrap .wrap__container .container__insta .insta__images > div {
@@ -8053,12 +8170,38 @@ main {
 }
 
 .footer .footer__wrap .wrap__container .container__insta p {
-  margin-left: -15px;
   font-size: 13px;
   color: #333333;
   font-style: italic;
   line-height: 1.846;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 991px) {
+  .footer .footer__wrap .wrap__container .container__insta p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer .footer__wrap .wrap__container .container__insta p {
+    text-align: start;
+  }
+}
+
+.footer .footer__wrap .wrap__decorate {
+  margin-top: 30px;
+}
+
+.footer .footer__wrap .wrap__decorate h3 {
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.footer .footer__wrap .wrap__decorate a {
+  color: #f88383;
 }
 
 .banner {
