@@ -8020,7 +8020,96 @@ main .About-us .About-us__container .container__images {
 }
 
 main .home__count {
-  padding: 88px 0;
+  background-color: #95e1d3;
+}
+
+main .home__count .count__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 600px) {
+  main .home__count .count__wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+main .home__count .count__wrap .wrap__item {
+  padding: 78px 0;
+  margin: auto;
+  border-left: 1px solid #b5eae0;
+  border-right: 1px solid #b5eae0;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  width: 20%;
+}
+
+@media only screen and (max-width: 991px) {
+  main .home__count .count__wrap .wrap__item {
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .home__count .count__wrap .wrap__item {
+    width: 50%;
+    padding: 20px 0;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+main .home__count .count__wrap .wrap__item h3 {
+  font-size: 72px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 991px) {
+  main .home__count .count__wrap .wrap__item h3 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .home__count .count__wrap .wrap__item h3 {
+    margin-bottom: 15px;
+  }
+}
+
+main .home__count .count__wrap .wrap__item .wrap__item--decorate {
+  margin-bottom: 12px;
+}
+
+main .home__count .count__wrap .wrap__item p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+  main .home__count .count__wrap .wrap__item p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .home__count .count__wrap .wrap__item .wrap__item--members {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .home__count .count__wrap .wrap__item .wrap__item--members {
+    margin-bottom: 25px;
+  }
 }
 
 .footer {
