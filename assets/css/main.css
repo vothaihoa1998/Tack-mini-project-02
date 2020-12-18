@@ -8084,8 +8084,10 @@ main .home__count .count__wrap .wrap__item h3 {
   }
 }
 
-main .home__count .count__wrap .wrap__item .wrap__item--decorate {
-  margin-bottom: 12px;
+@media only screen and (max-width: 991px) {
+  main .home__count .count__wrap .wrap__item .wrap__item--decorate {
+    margin-bottom: 12px;
+  }
 }
 
 main .home__count .count__wrap .wrap__item p {
