@@ -108,6 +108,13 @@ body {
   height: 3px;
 }
 
+.line-red {
+  background-color: rgb(243, 129, 129);
+  width: 60px;
+  height: 3px;
+  margin: auto;
+}
+
 $transition: all 0.5s ease;
 .search {
   width: 50px;
