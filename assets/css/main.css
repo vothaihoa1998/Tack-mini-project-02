@@ -8019,6 +8019,10 @@ main .About-us .About-us__container .container__images {
   }
 }
 
+main .home__count {
+  padding: 88px 0;
+}
+
 .footer {
   background-color: #f8f8f8;
   width: 100%;
