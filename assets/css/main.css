@@ -8396,7 +8396,7 @@ main .About-us .About-us__container .container__images {
   z-index: 15;
 }
 
-.banner .banner__container .container_wrap {
+.banner .banner__container .container__wrap {
   margin: auto;
   color: #ffffff;
   text-align: center;
@@ -8405,7 +8405,7 @@ main .About-us .About-us__container .container__images {
   width: fit-content;
 }
 
-.banner .banner__container .container_wrap h1 {
+.banner .banner__container .container__wrap h1 {
   font-family: 'Kaushan Script', cursive;
   font-size: 72px;
   font-weight: 400;
@@ -8414,18 +8414,18 @@ main .About-us .About-us__container .container__images {
 }
 
 @media only screen and (max-width: 768px) {
-  .banner .banner__container .container_wrap h1 {
+  .banner .banner__container .container__wrap h1 {
     font-size: 42px;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .banner .banner__container .container_wrap h1 {
+  .banner .banner__container .container__wrap h1 {
     font-size: 32px;
   }
 }
 
-.banner .banner__container .container_wrap h2 {
+.banner .banner__container .container__wrap h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 150px;
   font-weight: bold;
@@ -8436,30 +8436,30 @@ main .About-us .About-us__container .container__images {
 }
 
 @media screen and (max-width: 800px) {
-  .banner .banner__container .container_wrap h2 {
+  .banner .banner__container .container__wrap h2 {
     width: auto;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .banner .banner__container .container_wrap h2 {
+  .banner .banner__container .container__wrap h2 {
     font-size: 85px;
     width: 400px;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .banner .banner__container .container_wrap h2 {
+  .banner .banner__container .container__wrap h2 {
     font-size: 55px;
     width: auto;
   }
 }
 
-.banner .banner__container .container_wrap .line {
+.banner .banner__container .container__wrap .line {
   margin: 0 auto 50px auto;
 }
 
-.banner .banner__container .container_wrap .btn-banner {
+.banner .banner__container .container__wrap .btn-banner {
   border: 3px solid #ffffff;
   width: 164px;
   height: 44px;
