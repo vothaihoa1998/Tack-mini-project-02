@@ -102,17 +102,34 @@ body {
 
 }
 
-.line {
-  background-color: #fff;
-  width: 60px;
-  height: 3px;
-}
+// .line {
+//   background-color: #fff;
+//   width: 60px;
+//   height: 3px;
+// }
 
-.line-red {
+@mixin line-red {
+  content: "";
+  display: inline-block;
+  position: absolute;
   background-color: rgb(243, 129, 129);
   width: 60px;
   height: 3px;
   margin: auto;
+  left: 0;
+  right: 0;
+} 
+
+
+.overlay-bg{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-image: linear-gradient(#e37f7c,#edd285);
+  transition: all 0.3s;
+  opacity:0;
 }
 
 $transition: all 0.5s ease;
