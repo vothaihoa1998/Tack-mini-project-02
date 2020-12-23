@@ -7894,6 +7894,7 @@ main .About-us .About-us__container::before {
 
 main .About-us .About-us__container h2 {
   font-size: 24px;
+  font-weight: 400;
   color: #333333;
   margin-bottom: 10px;
 }
@@ -7943,10 +7944,6 @@ main .About-us .About-us__container .container__images .images__item {
   transition: all 0.3s;
   width: 31.5%;
   cursor: pointer;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -7968,10 +7965,6 @@ main .About-us .About-us__container .container__images .images__item:hover .over
   opacity: 0.9;
 }
 
-main .About-us .About-us__container .container__images .images__item .item__story-about {
-  position: relative;
-}
-
 main .About-us .About-us__container .container__images .images__item .item__story-about img {
   display: block;
 }
@@ -7985,7 +7978,6 @@ main .About-us .About-us__container .container__images .images__item .item__stor
 main .About-us .About-us__container .container__images .images__item .item__decorate {
   text-align: center;
   position: absolute;
-  width: 100%;
   left: 50%;
   top: 55%;
   transform: translate(-50%, -50%);
@@ -8348,7 +8340,7 @@ main .unique-design .design__content h3 {
 }
 
 main .what-we-do {
-  padding: 111px 0 120px 0;
+  padding: 111px 0 0 0;
 }
 
 main .what-we-do .we-do__container {
@@ -8392,7 +8384,14 @@ main .what-we-do .we-do__container p {
   margin-bottom: 90px;
 }
 
+@media only screen and (max-width: 1250px) {
+  main .what-we-do .we-do__container p {
+    width: auto;
+  }
+}
+
 main .what-we-do .we-do__container .container__box {
+  margin-bottom: 120px;
   justify-content: space-between;
 }
 
@@ -8427,6 +8426,403 @@ main .what-we-do .we-do__container .container__box .box__wrap .wrap__item h3 {
   font-size: 14px;
   margin-bottom: 0;
   font-weight: 400;
+}
+
+main .container__messenger {
+  padding: 70px 0;
+  background-color: #f8f8f8;
+  margin-bottom: 100px;
+}
+
+main .container__messenger .messenger__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  main .container__messenger .messenger__wrap {
+    flex-direction: column;
+  }
+}
+
+main .container__messenger .messenger__wrap .wrap__img {
+  width: 15%;
+  height: 154px;
+  border: 3px solid #95e1d3;
+  margin-right: 60px;
+}
+
+@media only screen and (max-width: 991px) {
+  main .container__messenger .messenger__wrap .wrap__img {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .container__messenger .messenger__wrap .wrap__img {
+    width: 24%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .container__messenger .messenger__wrap .wrap__img {
+    height: 120px;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .container__messenger .messenger__wrap .wrap__img {
+    width: 130px;
+  }
+}
+
+main .container__messenger .messenger__wrap .wrap__img img {
+  display: block;
+  margin: auto;
+  transform: translateY(80%);
+}
+
+@media screen and (max-width: 600px) {
+  main .container__messenger .messenger__wrap .wrap__img img {
+    transform: translateY(50%);
+  }
+}
+
+main .container__messenger .messenger__wrap span {
+  width: 73%;
+}
+
+@media screen and (max-width: 600px) {
+  main .container__messenger .messenger__wrap span {
+    width: 80%;
+  }
+}
+
+main .container__messenger .messenger__wrap span p {
+  font-size: 24px;
+  color: #999999;
+  font-style: italic;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+  main .container__messenger .messenger__wrap span p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .container__messenger .messenger__wrap span p {
+    font-size: 16px;
+  }
+}
+
+main .container__messenger .messenger__wrap span h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #333333;
+  margin-left: 80px;
+}
+
+@media screen and (max-width: 600px) {
+  main .container__messenger .messenger__wrap span h2 {
+    font-size: 20px;
+  }
+}
+
+main .container__messenger .messenger__wrap span h2::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: #f38181;
+  width: 60px;
+  height: 3px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: auto;
+  bottom: 16px;
+  left: 275px;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1250px) {
+  main .container__messenger .messenger__wrap span h2::before {
+    left: 230px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  main .container__messenger .messenger__wrap span h2::before {
+    left: 200px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .container__messenger .messenger__wrap span h2::before {
+    left: 170px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .container__messenger .messenger__wrap span h2::before {
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main .container__messenger .messenger__wrap span h2::before {
+    left: 30px;
+  }
+}
+
+main .meet-our-team {
+  width: 100%;
+  padding: 0 0 110px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  main .meet-our-team {
+    padding: 60px 0 80px 0;
+  }
+}
+
+main .meet-our-team .our-team__container {
+  margin: auto;
+  text-align: center;
+}
+
+main .meet-our-team .our-team__container::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: #f38181;
+  width: 60px;
+  height: 3px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 115px;
+}
+
+main .meet-our-team .our-team__container h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+main .meet-our-team .our-team__container h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+main .meet-our-team .our-team__container p {
+  font-size: 15px;
+  color: #999999;
+  line-height: 1.6;
+  width: 954px;
+  margin: auto;
+  padding: 48px 0 105px 0;
+}
+
+@media only screen and (max-width: 1250px) {
+  main .meet-our-team .our-team__container p {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .meet-our-team .our-team__container p {
+    padding: 28px 0 65px 0;
+  }
+}
+
+main .meet-our-team .our-team__container .container__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1250px) {
+  main .meet-our-team .our-team__container .container__wrap {
+    justify-content: space-between;
+  }
+}
+
+main .meet-our-team .our-team__container .container__wrap .wrap__images {
+  width: 31.5%;
+}
+
+@media only screen and (max-width: 768px) {
+  main .meet-our-team .our-team__container .container__wrap .wrap__images {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+main .meet-our-team .our-team__container .container__wrap .wrap__images .images__item {
+  position: relative;
+  transition: all 0.3s;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+main .meet-our-team .our-team__container .container__wrap .wrap__images .images__item:hover {
+  box-shadow: 10px 10px #95e1d3;
+}
+
+main .meet-our-team .our-team__container .container__wrap .wrap__images .images__item:hover .item__decorate {
+  opacity: 1;
+}
+
+main .meet-our-team .our-team__container .container__wrap .wrap__images .images__item:hover .overlay-bg {
+  opacity: 0.9;
+}
+
+main .meet-our-team .our-team__container .container__wrap .wrap__images .images__item .item__story-about img {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  main .meet-our-team .our-team__container .container__wrap .wrap__images .images__item .item__story-about img {
+    width: 100%;
+  }
+}
+
+main .meet-our-team .our-team__container .container__wrap .wrap__images .images__item .item__decorate {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+main .meet-our-team .our-team__container .container__wrap .wrap__images .images__item .item__decorate ul {
+  display: flex;
+  height: 55px;
+  width: 220px;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fce38a;
+}
+
+@media only screen and (max-width: 991px) {
+  main .meet-our-team .our-team__container .container__wrap .wrap__images .images__item .item__decorate ul {
+    height: 55px;
+    width: 220px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .meet-our-team .our-team__container .container__wrap .wrap__images .images__item .item__decorate ul {
+    font-size: 25px;
+  }
+}
+
+main .meet-our-team .our-team__container .container__wrap .wrap__images .images__item .item__decorate ul li {
+  height: 100%;
+  width: 100%;
+  border: 0.1px solid #f9bd87;
+}
+
+main .meet-our-team .our-team__container .container__wrap .wrap__images .images__item .item__decorate ul li .fa {
+  padding-top: 15px;
+  width: 100%;
+  height: 72%;
+  font-size: 25px;
+  color: #f38181;
+}
+
+@media only screen and (max-width: 991px) {
+  main .meet-our-team .our-team__container .container__wrap .wrap__images .images__item .item__decorate ul li .fa {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .meet-our-team .our-team__container .container__wrap .wrap__images .images__item .item__decorate ul li .fa {
+    font-size: 25px;
+  }
+}
+
+main .meet-our-team .our-team__container .container__wrap .wrap__images .images__item .item__decorate ul li .fa:hover {
+  color: #ffffff;
+  background-color: #f38181;
+}
+
+main .meet-our-team .our-team__container .container__wrap .wrap__images h3 {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+main .meet-our-team .our-team__container .container__wrap .wrap__images p {
+  display: inline;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  padding: 0;
+}
+
+main .icon {
+  padding: 60px 0;
+  background-color: #f8f8f8;
+}
+
+main .icon .icon__container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .icon .icon__container img {
+  width: 10%;
+}
+
+@media only screen and (max-width: 768px) {
+  main .icon .icon__container img {
+    width: 23%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  main .icon .icon__container img {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .icon img:nth-child(1) {
+    margin: 0 50px 80px 0;
+  }
+  main .icon img:nth-child(2) {
+    margin: 0 50px 80px 0;
+  }
+  main .icon img:nth-child(3) {
+    margin: 0 0 80px 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  main .icon img:nth-child(1) {
+    margin: 0 40px 50px 0;
+  }
+  main .icon img:nth-child(2) {
+    margin: 0 40px 50px 0;
+  }
+  main .icon img:nth-child(3) {
+    margin: 0 0 50px 0;
+  }
 }
 
 .footer {
