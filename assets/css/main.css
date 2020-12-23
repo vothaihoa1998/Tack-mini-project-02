@@ -8275,6 +8275,160 @@ main .amazing-service .service__container .container__wrap .wrap__item p {
   }
 }
 
+main .unique-design {
+  position: relative;
+  background-image: url(../images/Unique-design.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 850px;
+}
+
+main .unique-design::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  background-image: url(../images/ipad.png);
+  bottom: 0;
+  left: 0;
+  right: 5%;
+  margin: auto;
+  height: 620px;
+  width: 520px;
+  z-index: 15;
+}
+
+main .unique-design::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  background-image: url(../images/iphone-5s.png);
+  background-repeat: no-repeat;
+  bottom: -50px;
+  left: 24%;
+  right: 0;
+  margin: auto;
+  height: 440px;
+  width: 240px;
+  z-index: 20;
+}
+
+main .unique-design .design__content {
+  position: absolute;
+  top: 108px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+main .unique-design .design__content::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: #f38181;
+  width: 60px;
+  height: 3px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 120px;
+}
+
+main .unique-design .design__content h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+main .unique-design .design__content h3 {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+main .what-we-do {
+  padding: 111px 0 120px 0;
+}
+
+main .what-we-do .we-do__container {
+  text-align: center;
+  color: #333333;
+}
+
+main .what-we-do .we-do__container::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: #f38181;
+  width: 60px;
+  height: 3px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 110px;
+}
+
+main .what-we-do .we-do__container h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 22px;
+}
+
+main .what-we-do .we-do__container h3 {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 44px;
+}
+
+main .what-we-do .we-do__container p {
+  margin: auto;
+  font-size: 15px;
+  color: #999999;
+  line-height: 1.6;
+  font-weight: 400;
+  width: 954px;
+  margin-bottom: 90px;
+}
+
+main .what-we-do .we-do__container .container__box {
+  justify-content: space-between;
+}
+
+main .what-we-do .we-do__container .container__box .box__img-we-do {
+  width: 50%;
+}
+
+main .what-we-do .we-do__container .container__box .box__img-we-do img {
+  display: block;
+}
+
+main .what-we-do .we-do__container .container__box .box__wrap {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main .what-we-do .we-do__container .container__box .box__wrap .wrap__item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e5e5;
+  height: 64px;
+}
+
+main .what-we-do .we-do__container .container__box .box__wrap .wrap__item img {
+  margin-left: 18px;
+  margin-right: 16px;
+}
+
+main .what-we-do .we-do__container .container__box .box__wrap .wrap__item h3 {
+  font-size: 14px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
 .footer {
   background-color: #f8f8f8;
   width: 100%;
@@ -8619,7 +8773,7 @@ main .amazing-service .service__container .container__wrap .wrap__item p {
 .banner {
   top: 0;
   position: relative;
-  z-index: 5;
+  z-index: 1;
 }
 
 .banner .banner__slick .slick-item {
@@ -8631,15 +8785,26 @@ main .amazing-service .service__container .container__wrap .wrap__item p {
   width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  .banner .banner__slick .slick-item {
+    height: 700px;
+  }
+}
+
 .banner .banner__container {
   width: 100%;
   position: absolute;
-  top: 212.474px;
+  top: 215px;
   z-index: 15;
 }
 
+@media only screen and (max-width: 768px) {
+  .banner .banner__container {
+    top: 150px;
+  }
+}
+
 .banner .banner__container .container__wrap {
-  position: relative;
   margin: auto;
   color: #ffffff;
   text-align: center;
@@ -8656,15 +8821,27 @@ main .amazing-service .service__container .container__wrap .wrap__item p {
   margin: auto;
   left: 0;
   right: 0;
-  top: 460px;
+  top: 450px;
   background-color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner .banner__container .container__wrap::before {
+    top: 280px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .banner .banner__container .container__wrap::before {
+    top: 230px;
+  }
 }
 
 .banner .banner__container .container__wrap h1 {
   font-family: 'Kaushan Script', cursive;
   font-size: 72px;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   line-height: 1.2;
 }
 
@@ -8676,7 +8853,7 @@ main .amazing-service .service__container .container__wrap .wrap__item p {
 
 @media only screen and (max-width: 500px) {
   .banner .banner__container .container__wrap h1 {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 
@@ -8685,10 +8862,9 @@ main .amazing-service .service__container .container__wrap .wrap__item p {
   font-size: 150px;
   font-weight: bold;
   width: 800px;
-  margin-bottom: 130px;
+  margin-bottom: 110px;
   line-height: 0.933;
   text-align: center;
-  text-transform: uppercase;
 }
 
 @media screen and (max-width: 800px) {
@@ -8701,12 +8877,18 @@ main .amazing-service .service__container .container__wrap .wrap__item p {
   .banner .banner__container .container__wrap h2 {
     font-size: 85px;
     width: 400px;
+    margin-bottom: 80px;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .banner .banner__container .container__wrap h2 {
-    font-size: 55px;
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .banner .banner__container .container__wrap h2 {
     width: auto;
   }
 }
@@ -8720,11 +8902,6 @@ main .amazing-service .service__container .container__wrap .wrap__item p {
   font-weight: bold;
   color: #ffffff;
   background-color: transparent;
-  cursor: pointer;
-}
-
-.banner .banner__container .container__wrap .btn-banner:hover {
-  border: 3px solid #f2d974;
 }
 
 .banner .banner__line {
@@ -8748,7 +8925,7 @@ main .amazing-service .service__container .container__wrap .wrap__item p {
 
 .banner .banner__line .line__wrap .wrap__item {
   border-top: 3px solid #ffffff;
-  width: 280px;
+  width: 23%;
   height: 73px;
   opacity: 0.502;
   padding-top: 26px;
@@ -8756,21 +8933,22 @@ main .amazing-service .service__container .container__wrap .wrap__item p {
   color: #ffffff;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 768px) {
   .banner .banner__line .line__wrap .wrap__item {
-    width: 180px;
+    height: 55px;
+    padding-top: 20px;
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .banner .banner__line .line__wrap .wrap__item {
-    width: 130px;
+    width: 45%;
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
   .banner .banner__line .line__wrap .wrap__item {
-    width: 200px;
+    width: 40%;
   }
 }
 
@@ -8800,15 +8978,11 @@ main .amazing-service .service__container .container__wrap .wrap__item p {
   left: 0;
   right: 0;
   top: -3px;
-  width: 70px;
   left: auto;
   right: auto;
 }
 
-.banner .banner__line .line__wrap .line {
-  position: absolute;
-  top: -3px;
-  width: 70px;
-  background-color: #f38181;
+.banner .slick-dots {
+  display: none !important;
 }
 /*# sourceMappingURL=main.css.map */

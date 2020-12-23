@@ -9,7 +9,7 @@ $('.search-button').click(function(){
   });
 
   $(document).ready(function(){
-    $('.banner-slick').slick({
+    $('.banner__slick').slick({
         mobileFirst: true,
         slidesToShow: 1,
         slidesToScroll: 1,
