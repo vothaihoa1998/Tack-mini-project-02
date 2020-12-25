@@ -7748,6 +7748,7 @@ body {
 
 .header-scroll .header-scroll__container .container__wrap .wrap__nav li {
   position: relative;
+  width: fit-content;
 }
 
 .header-scroll .header-scroll__container .container__wrap .wrap__nav .nav__item {
@@ -7758,7 +7759,7 @@ body {
 @media only screen and (max-width: 991px) {
   .header-scroll .header-scroll__container .container__wrap .wrap__nav .nav__item {
     display: block;
-    margin: 0;
+    margin: 0 auto;
   }
 }
 
@@ -8190,6 +8191,12 @@ main .amazing-service .service__container .container__wrap::before {
   }
 }
 
+@media only screen and (max-width: 991px) {
+  main .amazing-service .service__container .container__wrap .wrap__item:nth-child(6) {
+    margin-bottom: 120px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   main .amazing-service .service__container .container__wrap .wrap__item:nth-child(6) {
     width: 80%;
@@ -8278,10 +8285,9 @@ main .unique-design {
   height: 850px;
 }
 
-main .unique-design::after {
+main .unique-design .content__ipad {
   display: inline-block;
   position: absolute;
-  content: "";
   background-image: url(../images/ipad.png);
   bottom: 0;
   left: 0;
@@ -8292,10 +8298,15 @@ main .unique-design::after {
   z-index: 15;
 }
 
-main .unique-design::before {
+@media screen and (max-width: 550px) {
+  main .unique-design .content__ipad {
+    left: auto;
+  }
+}
+
+main .unique-design .content__iphone {
   display: inline-block;
   position: absolute;
-  content: "";
   background-image: url(../images/iphone-5s.png);
   background-repeat: no-repeat;
   bottom: -50px;
@@ -8305,6 +8316,13 @@ main .unique-design::before {
   height: 440px;
   width: 240px;
   z-index: 20;
+}
+
+@media screen and (max-width: 550px) {
+  main .unique-design .content__iphone {
+    right: 30px;
+    left: auto;
+  }
 }
 
 main .unique-design .design__content {
@@ -8396,26 +8414,50 @@ main .what-we-do .we-do__container .container__box {
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 768px) {
+  main .what-we-do .we-do__container .container__box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 main .what-we-do .we-do__container .container__box .box__img-we-do {
-  width: 50%;
+  width: 46%;
 }
 
 main .what-we-do .we-do__container .container__box .box__img-we-do img {
   display: block;
 }
 
+@media only screen and (max-width: 768px) {
+  main .what-we-do .we-do__container .container__box .box__img-we-do {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+main .what-we-do .we-do__container .container__box .box__wrap > div {
+  margin-bottom: 15px;
+}
+
 main .what-we-do .we-do__container .container__box .box__wrap {
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
+}
+
+@media only screen and (max-width: 768px) {
+  main .what-we-do .we-do__container .container__box .box__wrap {
+    width: 100%;
+  }
 }
 
 main .what-we-do .we-do__container .container__box .box__wrap .wrap__item {
   display: flex;
   align-items: center;
   border: 1px solid #e5e5e5;
-  height: 64px;
+  height: 54px;
 }
 
 main .what-we-do .we-do__container .container__box .box__wrap .wrap__item img {
@@ -9148,15 +9190,21 @@ main .what-people-say {
   height: 830px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1250px) {
   main .what-people-say {
-    padding-bottom: 150px;
+    padding-bottom: 100px;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   main .what-people-say {
-    padding-bottom: 200px;
+    padding-bottom: 250px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  main .what-people-say {
+    padding-bottom: 420px;
   }
 }
 
@@ -9208,7 +9256,7 @@ main .what-people-say .people-say__container h3 {
   font-size: 30px;
   font-weight: bold;
   color: #333333;
-  margin-bottom: 130px;
+  margin-bottom: 120px;
   text-transform: uppercase;
 }
 
@@ -9225,7 +9273,6 @@ main .what-people-say .people-say__container h3 {
 }
 
 main .what-people-say .people-say__container .container__clients {
-  align-items: center;
   justify-content: space-around;
 }
 
@@ -9241,18 +9288,13 @@ main .what-people-say .people-say__container .container__clients .clients__wrap 
   display: flex;
   align-items: flex-start;
   text-align: left;
-  margin-bottom: 65px;
-}
-
-@media only screen and (max-width: 991px) {
-  main .what-people-say .people-say__container .container__clients .clients__wrap {
-    margin-bottom: 45px;
-  }
+  margin-bottom: 25px;
 }
 
 @media only screen and (max-width: 768px) {
   main .what-people-say .people-say__container .container__clients .clients__wrap {
     width: auto;
+    margin-bottom: 10px;
   }
 }
 
@@ -9284,22 +9326,23 @@ main .what-people-say .people-say__container .container__clients .clients__wrap 
   margin-bottom: 15px;
 }
 
-@media only screen and (max-width: 991px) {
-  main .what-people-say .people-say__container .container__clients .clients__wrap .wrap__item h3 {
-    margin-bottom: 15px;
-  }
-}
-
 main .what-people-say .people-say__container .container__clients .clients__wrap .wrap__item p {
   font-size: 15px;
   font-weight: 300;
   font-style: italic;
   color: #333333;
+  margin-bottom: 40px;
 }
 
 @media only screen and (max-width: 991px) {
   main .what-people-say .people-say__container .container__clients .clients__wrap .wrap__item p {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .what-people-say .people-say__container .container__clients .clients__wrap .wrap__item p {
+    margin-bottom: 30px;
   }
 }
 
@@ -9322,12 +9365,6 @@ main .latest-blog {
   width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
-  main .latest-blog {
-    padding: 60px 0 80px 0;
-  }
-}
-
 main .latest-blog .blog__container {
   margin: auto;
   text-align: center;
@@ -9348,7 +9385,7 @@ main .latest-blog .blog__container::before {
 
 @media only screen and (max-width: 768px) {
   main .latest-blog .blog__container::before {
-    top: 100px;
+    top: 110px;
   }
 }
 
@@ -9364,11 +9401,12 @@ main .latest-blog .blog__container h3 {
   font-weight: bold;
   color: #333333;
   margin-bottom: 94px;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 768px) {
   main .latest-blog .blog__container h3 {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
 }
 
@@ -9384,6 +9422,12 @@ main .latest-blog .blog__container .container__wrap {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  main .latest-blog .blog__container .container__wrap .wrap__images:nth-child(3) {
+    margin-bottom: 0;
+  }
+}
+
 main .latest-blog .blog__container .container__wrap .wrap__images {
   width: 31.5%;
 }
@@ -9391,7 +9435,7 @@ main .latest-blog .blog__container .container__wrap .wrap__images {
 @media only screen and (max-width: 768px) {
   main .latest-blog .blog__container .container__wrap .wrap__images {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
 
@@ -9413,13 +9457,45 @@ main .latest-blog .blog__container .container__wrap .wrap__images .images__item 
 }
 
 main .latest-blog .blog__container .container__wrap .wrap__images .images__item .item__decorate {
-  text-align: center;
   position: absolute;
-  left: 50%;
-  top: 55%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: all 0.3s;
+  bottom: 10px;
+  left: -10px;
+  background-color: #95e1d3;
+  width: 60px;
+  height: 70px;
+}
+
+@media only screen and (max-width: 991px) {
+  main .latest-blog .blog__container .container__wrap .wrap__images .images__item .item__decorate {
+    width: 45px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .latest-blog .blog__container .container__wrap .wrap__images .images__item .item__decorate {
+    width: 60px;
+  }
+}
+
+main .latest-blog .blog__container .container__wrap .wrap__images .images__item .item__decorate h3 {
+  transform: translateY(10px);
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+main .latest-blog .blog__container .container__wrap .wrap__images .images__item .item__decorate p {
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 main .latest-blog .blog__container .container__wrap .wrap__images h3 {
@@ -9428,13 +9504,58 @@ main .latest-blog .blog__container .container__wrap .wrap__images h3 {
   text-transform: uppercase;
   margin-bottom: 15px;
   text-align: left;
+  color: #333333;
 }
 
 main .latest-blog .blog__container .container__wrap .wrap__images p {
   font-size: 15px;
-  font-weight: 300;
-  padding: 0;
+  font-weight: 400;
   text-align: left;
+  padding: 0 0 20px 0;
+  color: #999999;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1250px) {
+  main .latest-blog .blog__container .container__wrap .wrap__images .blog-p-02, main .latest-blog .blog__container .container__wrap .wrap__images .blog-p-03 {
+    padding-bottom: 37px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  main .latest-blog .blog__container .container__wrap .wrap__images .blog-p-01 {
+    padding-bottom: 40px;
+  }
+  main .latest-blog .blog__container .container__wrap .wrap__images .blog-p-02 {
+    padding-bottom: 40px;
+  }
+  main .latest-blog .blog__container .container__wrap .wrap__images .blog-p-03 {
+    padding-bottom: 24px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  main .latest-blog .blog__container .container__wrap .wrap__images .blog-p-01, main .latest-blog .blog__container .container__wrap .wrap__images .blog-p-02, main .latest-blog .blog__container .container__wrap .wrap__images .blog-p-03 {
+    padding-bottom: 20px;
+  }
+}
+
+main .latest-blog .blog__container .container__wrap .wrap__images .item__comment {
+  display: flex;
+  align-items: center;
+}
+
+main .latest-blog .blog__container .container__wrap .wrap__images .item__comment img {
+  margin-right: 8px;
+}
+
+main .latest-blog .blog__container .container__wrap .wrap__images .item__comment h3 {
+  font-size: 15px;
+  color: #999999;
+  font-style: italic;
+  margin-right: 20px;
+  margin-bottom: auto;
 }
 
 main .map {
