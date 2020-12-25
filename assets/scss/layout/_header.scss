@@ -1,6 +1,6 @@
 .header-scroll {
   position: fixed;
-<<<<<<< HEAD
+
   width: 100%;
   left: 0;
   top: 0;
@@ -13,11 +13,6 @@
     transition: all 0.5s;
     background-color: rgba(#222222, .9);
   }
-=======
-  z-index: 15;
-  height: 92px;
-  width: 100%;
->>>>>>> 671378b727279f65360351b4d68c53d5d199b6cd
 
   .header-scroll__container {
     align-items: center;
@@ -29,7 +24,7 @@
     }
 
     .img-logo {
-<<<<<<< HEAD
+
       font-size: 30px;
       font-weight: bold;
       color: #ffffff;
@@ -39,18 +34,18 @@
       @media only screen and (max-width: 991px) {
         margin-right: auto;
       }
-=======
+
       color: #ffffff;
       font-weight: 30px;
       font-weight: bold;
->>>>>>> 671378b727279f65360351b4d68c53d5d199b6cd
+
 
       &:hover {
         color: #fce38a;
       }
     }
 
-<<<<<<< HEAD
+
 
     .container__wrap {
       display: flex;
@@ -71,19 +66,7 @@
         overflow: hidden;
         // transition: all 1s ease-out;
         
-=======
-    nav {
-      .container__wrap {
-        display: inline;
-        height: 92px;
-        width: 480px;
 
-        a {
-          font-size: 14px;
-          font-weight: 400;
-          text-transform: uppercase;
-          padding-right: 30px;
->>>>>>> 671378b727279f65360351b4d68c53d5d199b6cd
 
       }
       

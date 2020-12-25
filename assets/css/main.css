@@ -7669,11 +7669,6 @@ body {
 
 .header-scroll {
   position: fixed;
-<<<<<<< HEAD
-=======
-  z-index: 15;
-  height: 92px;
->>>>>>> 671378b727279f65360351b4d68c53d5d199b6cd
   width: 100%;
   left: 0;
   top: 0;
@@ -7682,7 +7677,6 @@ body {
   z-index: 100;
 }
 
-<<<<<<< HEAD
 .header-scroll.header--scrolled {
   transition: all 0.5s;
   background-color: rgba(34, 34, 34, 0.9);
@@ -7706,30 +7700,21 @@ body {
   color: #ffffff;
   z-index: 999;
   font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-weight: 30px;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 991px) {
   .header-scroll .header-scroll__container .img-logo {
     margin-right: auto;
   }
-=======
-.header-scroll .header-scroll__container {
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header-scroll .header-scroll__container .img-logo {
-  color: #ffffff;
-  font-weight: 30px;
-  font-weight: bold;
->>>>>>> 671378b727279f65360351b4d68c53d5d199b6cd
 }
 
 .header-scroll .header-scroll__container .img-logo:hover {
   color: #fce38a;
 }
 
-<<<<<<< HEAD
 .header-scroll .header-scroll__container .container__wrap {
   display: flex;
   align-items: center;
@@ -7783,36 +7768,19 @@ body {
 
 .header-scroll .header-scroll__container .container__wrap .wrap__nav .nav__item a {
   font-family: 'Montserrat', sans-serif;
-=======
-.header-scroll .header-scroll__container nav .container__wrap {
-  display: inline;
-  height: 92px;
-  width: 480px;
-}
-
-.header-scroll .header-scroll__container nav .container__wrap a {
->>>>>>> 671378b727279f65360351b4d68c53d5d199b6cd
   font-size: 14px;
   font-weight: 400;
   height: 80px;
   padding: 12px 0;
   text-transform: uppercase;
-<<<<<<< HEAD
   transition: color 0.3s ease-out;
 }
 
 .header-scroll .header-scroll__container .container__wrap .wrap__nav .nav__item a:hover {
-=======
-  padding-right: 30px;
-}
-
-.header-scroll .header-scroll__container nav .container__wrap a:hover {
->>>>>>> 671378b727279f65360351b4d68c53d5d199b6cd
   color: #fce38a;
   border-bottom: 3px solid #fce38a;
 }
 
-<<<<<<< HEAD
 @media only screen and (max-width: 991px) {
   .header-scroll .header-scroll__container .container__wrap .wrap__nav .nav__item a {
     color: #ffffff;
@@ -7840,10 +7808,6 @@ body {
     color: #ffffff;
     border-bottom: none;
   }
-=======
-.header-scroll .header-scroll__container .shopping {
-  height: 42px;
->>>>>>> 671378b727279f65360351b4d68c53d5d199b6cd
 }
 
 .header-scroll .header-scroll__container .container__wrap .shopping {
