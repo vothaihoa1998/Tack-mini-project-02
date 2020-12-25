@@ -7,5 +7,10 @@
 *.code-workspace
 
 .idea
+<<<<<<< HEAD
 .history
 .DS_STORE
+=======
+.DS_STORE
+.history
+>>>>>>> 671378b727279f65360351b4d68c53d5d199b6cd

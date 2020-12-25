@@ -1,0 +1,45 @@
+.header-scroll {
+  position: fixed;
+  z-index: 15;
+  height: 92px;
+  width: 100%;
+
+  .header-scroll__container {
+    align-items: center;
+    justify-content: space-between;
+
+    .img-logo {
+      color: #ffffff;
+      font-weight: 30px;
+      font-weight: bold;
+
+      &:hover {
+        color: #fce38a;
+      }
+    }
+
+    nav {
+      .container__wrap {
+        display: inline;
+        height: 92px;
+        width: 480px;
+
+        a {
+          font-size: 14px;
+          font-weight: 400;
+          text-transform: uppercase;
+          
+
+          &:hover {
+            color: #fce38a;
+          }
+        }
+      }
+    }
+
+    .shopping {
+      height: 42px;
+    }
+
+  }
+}
