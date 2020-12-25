@@ -7863,10 +7863,6 @@ body {
   transform: translate(0%) !important;
 }
 
-.scrolled {
-  background-image: linear-gradient(#fce38a, #f38181);
-}
-
 main .About-us {
   width: 100%;
   padding: 90px 0 110px 0;
@@ -9521,7 +9517,8 @@ main .latest-blog .blog__container .container__wrap .wrap__images p {
 }
 
 @media only screen and (max-width: 1250px) {
-  main .latest-blog .blog__container .container__wrap .wrap__images .blog-p-02, main .latest-blog .blog__container .container__wrap .wrap__images .blog-p-03 {
+  main .latest-blog .blog__container .container__wrap .wrap__images .blog-p-02,
+  main .latest-blog .blog__container .container__wrap .wrap__images .blog-p-03 {
     padding-bottom: 37px;
   }
 }
@@ -9539,7 +9536,9 @@ main .latest-blog .blog__container .container__wrap .wrap__images p {
 }
 
 @media only screen and (max-width: 1250px) {
-  main .latest-blog .blog__container .container__wrap .wrap__images .blog-p-01, main .latest-blog .blog__container .container__wrap .wrap__images .blog-p-02, main .latest-blog .blog__container .container__wrap .wrap__images .blog-p-03 {
+  main .latest-blog .blog__container .container__wrap .wrap__images .blog-p-01,
+  main .latest-blog .blog__container .container__wrap .wrap__images .blog-p-02,
+  main .latest-blog .blog__container .container__wrap .wrap__images .blog-p-03 {
     padding-bottom: 20px;
   }
 }
