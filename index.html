@@ -6,54 +6,251 @@
 <!--[if IE 8]>
 <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang=""> <!--<![endif]-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta http-equiv="Content-Language" content="en-us"/>
+    <meta http-equiv="Content-Language" content="en-us" />
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.css"> -->
-    <link rel="stylesheet" href="assets/css/vendor/themify-icons.css" />
-    <link rel="stylesheet" href="assets/scss/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/themify-icons.css" />
 </head>
+
 <body>
     <header class="header-scroll">
-        <div>
-            <div class="flex-container container">
-                <a href="#">
-                    <img src="assets/images/header-banner.png" alt="img-banner">
+
+        <div class="header-scroll__container flex-container container">
+            <a href="#" class="img-logo">MoGo</a>
+            <div class="container__wrap">
+                <ul class="wrap__nav">
+                    <li class="nav__item">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">Service</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">Work</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <a href="#" class="shopping">
+                    <img src="assets/images/shopping.png" alt="img-shopping">
                 </a>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Service</a>
-                        </li>
-                        <li>
-                            <a href="#">Work</a>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-                
+                <div class="search">
+                    <input type="search" class="search-box" />
+                    <span class="search-button">
+                        <span class="search-icon"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="container__menu" id="mobile-menu">
+                <div class="menu__bar"></div>
+                <div class="menu__bar"></div>
+                <div class="menu__bar"></div>
             </div>
         </div>
+
     </header>
 
+    <section class="banner">
+        <!-- <div class="banner__slick">
+        <div class="slick-item"><img src="assets/images/header-banner.png" alt="img-banner"></div>
+        <div class="slick-item"><img src="assets/images/header-banner.png" alt="img-banner"></div>
+        <div class="slick-item"><img src="assets/images/header-banner.png" alt="img-banner"></div>
+        <div class="slick-item"><img src="assets/images/header-banner.png" alt="img-banner"></div>
+    </div> -->
+        <div class="banner__container">
+            <div class="container_wrap">
+                <h1>Creative Template</h1>
+                <h2>Welcome to MoGo</h2>
+                <div class="line"></div>
+                <button class="btn-banner ">Learn More</button>
 
-    
+            </div>
+        </div>
+        <div class="banner__line ">
+            <div class="line__wrap flex-container container">
+                <div class="wrap__item wrap__item--decorate">
+                    <div class="line"></div>
+                    <span>
+                        <h3>01</h3>
+                        <p>Intro</p>
+                    </span>
+                </div>
+                <div class="wrap__item">
+                    <span>
+                        <h3>02</h3>
+                        <p>Work</p>
+                    </span>
+                </div>
+                <div class="wrap__item">
+                    <span>
+                        <h3>03</h3>
+                        <p>About</p>
+                    </span>
+                </div>
+                <div class="wrap__item">
+                    <span>
+                        <h3>04</h3>
+                        <p>Contacts</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrap container">
+            <div class="wrap__container flex-container">
+                <div class="container__content">
+                    <h3>Mogo</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                        ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <div class="content__item">
+                        <h3>15K</h3>
+                        <p>followers</p>
+                    </div>
+                    <div class="content__social">
+                        <p>Follow Us</p>
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-google"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-dribbble"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-tumblr"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content__email">
+                        <form action="">
+                            <input id="form-email" name="form-email" type="email" placeholder="Your Email">
+                            <input type="submit" value="Subscribe" />
+                        </form>
+                </div>
+                </div>
+                <div class="container__blog">
+                    <h3 class="blogs">Blogs</h3>
+                    <div class="blog__img">
+                        <img src="assets/images/footer01.png">
+                        <span class="img__decorate">
+                            <h3>Lorem ipsum dolor sit amet,
+                                consectetur adipiscing
+                            </h3>
+                            <p>Jan 9, 2016</p>
+                        </span>
+                    </div>
+                    <div class="blog__img">
+                        <img src="assets/images/footer02.png">
+                        <span class="img__decorate">
+                            <h3>Consectetur adipiscing elit,
+                                sed do eiusmod tempor
+                            </h3>
+                            <p>Jan 9, 2016</p>
+                        </span>
+                    </div>
+                    <div class="blog__img">
+                        <img src="assets/images/footer03.png">
+                        <span class="img__decorate">
+                            <h3>sed do eiusmod tempor
+                                incididunt ut labore
+                            </h3>
+                            <p>Jan 9, 2016</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="container__insta">
+                    <h3>Instagram</h3>
+                    <div class="insta__images">
+                        <div>
+                            <img src="assets/images/Insta-01.png">
+                        </div>
+                        <div>
+                            <img src="assets/images/Insta-02.png">
+                        </div>
+                        <div class="images-decorate">
+                            <img src="/assets/images/Insta-03.png">
+                        </div>
+                        <div>
+                            <img src="assets/images/Insta-04.png">
+                        </div>
+                        <div>
+                            <img src="assets/images/Insta-05.png">
+                        </div>
+                        <div>
+                            <img src="assets/images/Insta-06.png">
+                        </div>
+                        <div>
+                            <img src="assets/images/Insta-07.png">
+                        </div>
+                        <div>
+                            <img src="assets/images/Insta-08.png">
+                        </div>
+                        <div>
+                            <img src="assets/images/Insta-09.png">
+                        </div>
+                    </div>
+                    <p>View more photos</p>
+                </div>
+            </div>
+            <div class="wrap__decorate">
+                <h3>© 2016 MoGo free PSD template by <a href="#">Laaqiq</a></h3>
+            </div>
+        </div>
+    </footer>
+
+
 
 
 
@@ -67,5 +264,5 @@
     <script src="assets/js/vendor/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
-</html>
 
+</html>

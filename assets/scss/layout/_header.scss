@@ -1,0 +1,193 @@
+.header-scroll {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 100;
+
+
+  &.header--scrolled {
+    transition: all 0.5s;
+    background-color: rgba(#222222, .9);
+  }
+
+  .header-scroll__container {
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+
+    @media only screen and (max-width: 991px) {
+      justify-content: flex-end;
+    }
+
+    .img-logo {
+      font-size: 30px;
+      font-weight: bold;
+      color: #ffffff;
+      z-index: 999;
+      font-family: 'Montserrat', sans-serif;
+
+      @media only screen and (max-width: 991px) {
+        margin-right: auto;
+      }
+
+      &:hover {
+        color: #fce38a;
+      }
+    }
+
+
+    .container__wrap {
+      display: flex;
+      align-items: center;
+      
+      @media only screen and (max-width: 991px) {
+        flex-direction: column;
+        position: fixed;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        background: linear-gradient(to right, #fa9e1b, #8d4fff);
+        width: 100%;
+        height: 100%;
+        transform: translate(-101%);
+        opacity: 0.95;
+        text-align: center;
+        overflow: hidden;
+        transition: all 1s ease-out;
+        
+
+      }
+      
+
+      .wrap__nav {
+        margin-left: auto;
+  
+        @media only screen and (max-width: 991px) {
+          margin: auto;
+          text-align: center;
+          margin: 0 0 40px 0;
+        }
+  
+        li {
+          position: relative;
+        }
+  
+        .nav__item {
+          display: inline-block;
+          margin-right: 55px;
+  
+          @media only screen and (max-width: 991px) {
+            display: block;
+            margin: 0;
+          }
+  
+          a {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            height: 80px;
+            padding: 12px 0;
+            text-transform: uppercase;
+            transition: color 0.3s ease-out;
+  
+            &:hover {
+              color: #fce38a;
+              border-bottom: 3px solid #fce38a;
+            }
+  
+            @media only screen and (max-width: 991px) {
+              color: #ffffff;
+              font-size: 36px;
+              font-family: 'Indie Flower', cursive;
+              text-transform: none;
+              font-weight: 700;
+  
+              &::before {
+                display: block;
+                position: absolute;
+                top: 65%;
+                left: 0;
+                width: 0;
+                height: 4px;
+                background: #FFFFFF;
+                letter-spacing: 2px;
+                content: '';
+                transition: all 400ms ease;
+            }
+  
+            &:hover::before {
+              width: 100%;
+            }
+  
+              &:hover {
+                color: #ffffff;
+                border-bottom: none;
+              }
+  
+            }
+          }
+        }
+      }
+  
+      .shopping {
+        margin-right: 21px;
+        @media only screen and (max-width: 991px) {
+          margin-bottom: 30px;
+          margin-right: 0;
+        }
+      }
+    }
+
+    .container__menu {
+      display: none;
+      margin-left: 30px;
+      transform: translateY(-2px);
+      z-index: 999;
+      
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      @media only screen and (max-width: 991px) {
+        display: block;
+        margin-right: 20px;
+      }
+
+      .menu__bar {
+        width: 25px;
+        height: 3px;
+        background-color: #ffffff;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+
+      }
+    }
+
+    #mobile-menu.is-active .menu__bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    #mobile-menu.is-active .menu__bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .menu__bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .mobile-nav {
+      transform: translate(0%) !important;
+    }
+  }
+}
+
+
+
+
+.scrolled {
+  background-image: linear-gradient(rgb(252, 227, 138), rgb(243, 129, 129));
+}
